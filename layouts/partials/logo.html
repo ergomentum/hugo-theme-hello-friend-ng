@@ -1,8 +1,9 @@
 <a href="{{ if .Site.Params.Logo.LogoHomeLink }}{{ .Site.Params.Logo.LogoHomeLink }}{{else}}{{ .Site.BaseURL }}{{ end }}" style="text-decoration: none;">
     <div class="logo">
-        {{ if .Site.Params.Logo.path }}
-            <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
-        {{ else }}
+        <img class="logo-dark" src="{{ .Site.Params.Logo.pathDark }}" alt="{{ .Site.Params.Logo.alt }}" />
+        <img class="logo-light" src="{{ .Site.Params.Logo.pathLight }}" alt="{{ .Site.Params.Logo.alt }}" />
+        <!-- {{ if .Site.Params.Logo.path }} -->
+        <!-- {{ else }}
             <span class="logo__mark">></span>
             <span class="logo__text">{{ with .Site.Params.Logo.logoText }}{{ . }}{{ else }}hello{{ end }}</span>
             <span class="logo__cursor" style=
@@ -10,6 +11,6 @@
                    {{ with.Site.Params.Logo.logoCursorColor    }}background-color:{{ . }};{{ end }}
                    {{ with.Site.Params.Logo.logoCursorAnimate  }}animation-duration:{{ . }};{{ end }}">
             </span>
-        {{ end }}
+        {{ end }} -->
     </div>
 </a>

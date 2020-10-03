@@ -35,6 +35,17 @@
   }
 
 }
+.dark-theme {
+  .logo-light {
+    display: none;
+  }
+  .logo-dark {
+    display: block;
+  }
+}
+.logo-dark {
+  display: none;
+}
 
 @keyframes cursor {
   0% { opacity: 0; }
